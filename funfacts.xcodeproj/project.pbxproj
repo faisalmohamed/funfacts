@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4C588B602C67E3B400938E84 /* factView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C588B5F2C67E3B300938E84 /* factView.swift */; };
 		4CFA327529B3DC9B00FC0765 /* funfacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA327429B3DC9B00FC0765 /* funfacts.swift */; };
+		4CFD68162D0BA5830099B5C2 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD68152D0BA5830099B5C2 /* ShareSheet.swift */; };
 		4CFEB1E42999F2BD007675B5 /* funfactsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFEB1E32999F2BD007675B5 /* funfactsApp.swift */; };
 		4CFEB1E62999F2BD007675B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFEB1E52999F2BD007675B5 /* ContentView.swift */; };
 		4CFEB1E82999F2BE007675B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CFEB1E72999F2BE007675B5 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		4C588B5F2C67E3B300938E84 /* factView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = factView.swift; sourceTree = "<group>"; };
 		4CFA327429B3DC9B00FC0765 /* funfacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = funfacts.swift; sourceTree = "<group>"; };
+		4CFD68152D0BA5830099B5C2 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
 		4CFEB1E02999F2BD007675B5 /* funfacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = funfacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CFEB1E32999F2BD007675B5 /* funfactsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = funfactsApp.swift; sourceTree = "<group>"; };
 		4CFEB1E52999F2BD007675B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				4CFA327429B3DC9B00FC0765 /* funfacts.swift */,
 				4CFEB1E52999F2BD007675B5 /* ContentView.swift */,
 				4C588B5F2C67E3B300938E84 /* factView.swift */,
+				4CFD68152D0BA5830099B5C2 /* ShareSheet.swift */,
 				4CFEB1E72999F2BE007675B5 /* Assets.xcassets */,
 				4CFEB1E92999F2BE007675B5 /* funfacts.entitlements */,
 				4CFEB1EA2999F2BE007675B5 /* Preview Content */,
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CFEB1E62999F2BD007675B5 /* ContentView.swift in Sources */,
+				4CFD68162D0BA5830099B5C2 /* ShareSheet.swift in Sources */,
 				4CFA327529B3DC9B00FC0765 /* funfacts.swift in Sources */,
 				4C588B602C67E3B400938E84 /* factView.swift in Sources */,
 				4CFEB1E42999F2BD007675B5 /* funfactsApp.swift in Sources */,
