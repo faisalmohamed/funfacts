@@ -20,7 +20,7 @@ struct ContentView: View {
                 .padding(25)
             Spacer()
             Button("Next Fun Fact") {
-                funFact = funFactsList[.random(in: 2...301)] ?? ""
+                funFact = funFactsList[.random(in: 2...<funFactsList.count)] ?? ""
                 print(funFact)
                 
             }
