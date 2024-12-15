@@ -3,9 +3,10 @@ import SwiftUI
 struct ContentView: View {
     @Environment(\.colorScheme) var colorScheme: ColorScheme
     @State private var funFact: String = funFactsList[.random(in: 2...301)] ?? ""
+    @State private var isShareSheetPresented = false
     
     var body: some View {
-                
+        
         VStack {
             ZStack {
                 Image(colorScheme == .dark ? "funfacts-dark" : "funfacts")
@@ -15,27 +16,37 @@ struct ContentView: View {
             Text(funFact)
                 .foregroundColor(colorScheme == .dark ? .white : .black)
                 .multilineTextAlignment(.center)
+                .font(.title)
                 .fontWeight(.regular)
                 .fontWidth(.standard)
                 .padding(25)
             Spacer()
-            Button("Next Fun Fact") {
-                funFact = funFactsList[.random(in: 2...<funFactsList.count)] ?? ""
-                print(funFact)
-                
+            HStack {
+                Button("Next Fun Fact") {
+                    funFact = funFactsList[.random(in: 2..<funFactsList.count)] ?? ""
+                    print(funFact)
+                    
+                }
+                .font(.title)
+                .foregroundColor(.white)
+                .buttonStyle(.borderedProminent)
+                .padding(.bottom)
+                .padding(.leading, 85)
+                Button(action: { isShareSheetPresented = true }) {
+                    Image(systemName: "square.and.arrow.up")
+                        .font(.title)
+                        .buttonStyle(.borderedProminent)
+                        .padding(.bottom)
+                        .padding(.leading, 30)
+                        .padding(.trailing, 15)
+                        .sheet(isPresented: $isShareSheetPresented) { ShareSheet(items: ["\(funFact)"])
+                        }
+                }
             }
-            .font(.title)
-            .foregroundColor(.white)
-            .buttonStyle(.borderedProminent)
         }
-        .font(.title)
-        .foregroundColor(.white)
-        .buttonStyle(.borderedProminent)
-        .cornerRadius(10.0)
-        .padding(.all)
     }
 }
+    #Preview {
+        ContentView()
+    }
 
-#Preview {
-    ContentView()
-}
