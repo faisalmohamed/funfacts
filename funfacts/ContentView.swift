@@ -32,6 +32,8 @@ struct ContentView: View {
                 .buttonStyle(.borderedProminent)
                 .padding(.bottom)
                 .padding(.leading, 85)
+                .sensoryFeedback(.increase, trigger: funFact)
+                
                 Button(action: { isShareSheetPresented = true }) {
                     Image(systemName: "square.and.arrow.up")
                         .font(.title)
